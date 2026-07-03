@@ -1,0 +1,54 @@
+body{
+            background:#f4f4f4;
+        }
+
+.cha-img{
+            width:60px;
+        }
+.cha-bg-brown{
+    background-color: #e0a56bfa;
+}
+
+.cha-dark-brown {
+    background-color: #463326;
+}
+.cha-img-fluid {
+            width:90px;    
+}
+.cha-text-muted {
+            font-size: 0.55rem; line-height: 1.2;
+}
+.cha-btn-danger {
+            width: 32px; height: 32px;
+}
+
+.cha-lead{
+    color: #eeedec;
+}
+
+.cha-inter{
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+}
+.cha-btn-brown{    
+    background-color: #463326
+}
+.cha-btn-outline-cafe {
+    color: #6F4E37;
+    border-color: #6F4E37;
+    background-color: transparent;
+}
+    /* Efecto al pasar el mouse por encima */
+.cha-btn-outline-cafe:hover {
+    background-color: #6F4E37;
+    color: #ffffff;
+}
+.cha-nav-link{
+        font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    &:hover{
+    color: #490101;
+    }
+}
