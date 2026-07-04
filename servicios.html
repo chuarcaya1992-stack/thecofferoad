@@ -17,7 +17,7 @@
 <nav class="navbar navbar-expand-lg cha-bg-brown">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="images/logocafe.png" class="cha-img" alt="">
+            <a href='/'><img src="images/logocafe.png" class="cha-img" alt=""></a>
             <div class="ms-2">
                 <h4 class="m-0 text-dark fw-bold">The Coffee</h4>
                 <h4 class="m-0 text-dark fw-bold">Road</h4>
@@ -71,40 +71,40 @@
     <div class="container">
 <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
-    <div class="card h-100 border-0 rounded-5 shadow-sm text-center">
+    <article class="card h-100 border-0 rounded-5 shadow-sm text-center">
       <img src="images/DELIVERY.png" class="card-img-top rounded-top-5" alt="...">
       <div class="card-body">
         <h5 class="card-title">Servicio Delivery</h5>
         <p class="card-text">Llevamos tus bebidas y postres favoritos hasta la puerta de tu hogar. Hacemos delivery a todo Lima, Peru.</p>
       </div>
-    </div>
+    </article>
   </div>
   <div class="col">
-    <div class="card h-100 border-0 rounded-5 shadow-sm text-center">
+    <article class="card h-100 border-0 rounded-5 shadow-sm text-center">
       <img src="images/ZONA_WIFI.png" class="card-img-top rounded-top-5" alt="...">
       <div class="card-body">
         <h5 class="card-title">Zona WiFi</h5>
         <p class="card-text">Espacio cómodo y moderno con internet gratuito para estudiar o trabajar.</p>
       </div>
-    </div>
+    </article>
   </div>
   <div class="col">
-    <div class="card h-100 border-0 rounded-5 shadow-sm text-center">
+    <article class="card h-100 border-0 rounded-5 shadow-sm text-center">
       <img src="images/ZONA_DE_RESERVA.png" class="card-img-top rounded-top-5" alt="...">
       <div class="card-body">
         <h5 class="card-title">Reservas</h5>
         <p class="card-text">Reserva espacios especiales para reuniones, citas o celebraciones.</p>
       </div>
-    </div>
+    </article>
   </div>
   <div class="col">
-    <div class="card h-100 border-0 rounded-5 shadow-sm text-center">
+    <article class="card h-100 border-0 rounded-5 shadow-sm text-center">
       <img src="images/PEDIDA_DE_MANO.png" class="card-img-top rounded-top-5" alt="...">
       <div class="card-body">
         <h5 class="card-title">Eventos Especiales</h5>
         <p class="card-text">Acondicianamos e manera original y unica, un lugar para pedidas de mano con tu pareja, con sus postres favoritos.</p>
       </div>
-    </div>
+    </article>
   </div>
 </div>
 </div>
@@ -112,28 +112,22 @@
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
-                
-                <!-- Tarjeta del Formulario -->
                 <div class="card shadow-sm border-0 rounded-3">
                     <div class="card-body p-4 p-sm-5">
                         
-                        <!-- Encabezado -->
                         <div class="text-center mb-4">
                             <i class="bi bi-cup-hot text-danger display-4"></i>
                             <h2 class="fw-bold mt-2">Pedido de Cafetería</h2>
                             <p class="text-muted">Personaliza tu orden en un par de clics</p>
                         </div>
 
-                        <!-- Formulario principal -->
                         <form id="formCafeteria" novalidate>
                             
-                            <!-- Campo: Nombre -->
                             <div class="mb-3">
                                 <label for="nombreCliente" class="form-label fw-semibold">Nombre completo</label>
                                 <input type="text" class="form-control" id="nombreCliente" placeholder="Ej. Juan Pérez" required>
                             </div>
 
-                            <!-- Campo: Número de Mesa / Entrega -->
                             <div class="mb-3">
                                 <label for="tipoEntrega" class="form-label fw-semibold">Lugar de entrega</label>
                                 <select class="form-select" id="tipoEntrega" required>
@@ -144,20 +138,17 @@
                                 </select>
                             </div>
 
-                            <!-- Botón disparador del Modal (Ver Menú) -->
                             <div class="d-grid mb-4">
-                                <button type="button" class="btn cha-btn-outline-cafe w-100 btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#modalProductos">
+                                <button type="button" class="btn cha-btn-outline w-100 btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#modalProductos">
                                     <i class="bi bi-menu-button-wide me-2"></i>Ver Productos Disponibles
                                 </button>
                             </div>
 
-                            <!-- Resumen visual o notas opcionales -->
                             <div class="mb-4">
                                 <label for="notasPedido" class="form-label fw-semibold">Instrucciones especiales</label>
                                 <textarea class="form-control" id="notasPedido" rows="3" placeholder="Ej. Leche deslactosada, sin azúcar, mesa número 5..."></textarea>
                             </div>
 
-                            <!-- Botón de Envío -->
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-danger btn-lg fw-bold">Enviar Pedido</button>
                             </div>
@@ -165,18 +156,16 @@
                         </form>
 
                     </div>
-                </div> <!-- /card -->
+                </div> 
 
             </div>
         </div>
     </div>
 
-    <!-- MODAL DE PRODUCTOS (POP-UP) -->
     <div class="modal fade" id="modalProductos" tabindex="-1" aria-labelledby="modalProductosLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow">
                 
-                <!-- Encabezado del Modal -->
                 <div class="modal-header bg-danger text-white">
                     <h5 class="modal-title fw-bold" id="modalProductosLabel">
                         <i class="bi bi-journal-richtext me-2"></i>Menú de la Casa
@@ -184,12 +173,11 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 
-                <!-- Cuerpo del Modal -->
                 <div class="modal-body p-4">
                     <p class="text-muted mb-4">Consulta las opciones disponibles para agregar a tus instrucciones de pedido.</p>
                     
                     <div class="row g-3">
-                        <!-- Producto 1 -->
+
                         <div class="col-sm-6">
                             <div class="p-3 border rounded-3 d-flex justify-content-between align-items-center bg-white">
                                 <div>
@@ -200,7 +188,6 @@
                             </div>
                         </div>
                         
-                        <!-- Producto 2 -->
                         <div class="col-sm-6">
                             <div class="p-3 border rounded-3 d-flex justify-content-between align-items-center bg-white">
                                 <div>
@@ -211,7 +198,6 @@
                             </div>
                         </div>
 
-                        <!-- Producto 3 -->
                         <div class="col-sm-6">
                             <div class="p-3 border rounded-3 d-flex justify-content-between align-items-center bg-white">
                                 <div>
@@ -222,7 +208,6 @@
                             </div>
                         </div>
 
-                        <!-- Producto 4 -->
                         <div class="col-sm-6">
                             <div class="p-3 border rounded-3 d-flex justify-content-between align-items-center bg-white">
                                 <div>
@@ -235,7 +220,7 @@
                     </div>
                 </div>
                 
-                <!-- Pie del Modal -->
+                <!-- Modal -->
                 <div class="modal-footer bg-light">
                     <button type="button" class="btn btn-secondary shadow-sm" data-bs-dismiss="modal">Cerrar Menú</button>
                 </div>
@@ -247,7 +232,6 @@
 </main>
 
 <footer class="cha-footer cha-dark-brown container-fluid py-5 text-white">
-
     <div class="container">
         <div class="row align-items-center gy-4">            
             <div class="col-lg-3 col-md-6">
@@ -262,39 +246,32 @@
 
             <div class="col-lg-2 col-md-6">
                 <h3 class="fw-bold mb-3">Teléfonos</h3>
-                <p class="mb-2">01 6378295</p>
-                <p class="mb-0">970 859 500</p>
+                <p class="mb-2">📞 01 6378295</p>
+                <p class="mb-0">📱 970 859 500</p>
             </div>
-
             <div class="col-lg-3 col-md-6">
                 <h3 class="fw-bold mb-3">Información</h3>
                 <p class="mb-2">
-                    Jr. Paso de los Andes 265 -<br>
+                    📍 Jr. Paso de los Andes 265 -</p>
+                <p class="mb-2">    
                     San Miguel - Lima, Perú
                 </p>
-
-                <p class="mb-0">
-                    atencion@TheCoffeeRoad.pe
+                <p class="cha-text-email mb-0">
+                    <a href="mailto:tu-correo@://outlook.com.">✉ atencion@TheCoffeeRoad.pe </a>
                 </p>
-
             </div>
-
             <div class="col-lg-2 col-md-6 text-center">
                 <h3 class="fw-bold mb-4">Redes sociales</h3>
-
-                <a href="#" class="text-white fs-3 me-3">
+                <a href="https://www.facebook.com/" class="text-white fs-3 me-3">
                     <i class="bi bi-facebook"></i>
                 </a>
-
-                <a href="#" class="text-white fs-3 me-3">
+                <a href="https://www.instagram.com/" class="text-white fs-3 me-3">
                     <i class="bi bi-instagram"></i>
                 </a>
-
-                <a href="#" class="text-white fs-3">
+                <a href="https://api.whatsapp.com/" class="text-white fs-3">
                     <i class="bi bi-whatsapp"></i>
                 </a>
             </div>
-
                 <div class="col-lg-2 col-md-12 text-center">
                     <div class="bg-white text-dark p-3 rounded mx-auto">                
                         <img src="images/libro reclamaciones.png" alt="Código QR" class="cha-img-fluid my-2">
